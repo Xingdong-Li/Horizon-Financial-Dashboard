@@ -1,0 +1,6 @@
+PLAID_CLIENT_ID = "669bfd0b5e3c0b001a9ef134"
+PLAID_SECRET = "faeb1b83921e743d9c4fedc8bd31b6"
+DYNAMODB_TABLE_NAME_BANK_ACCOUNT = "BankAccounts"
+REGION = "us-east-1"
+# AWS_ACCESS_KEY_ID = "Enter your AWS access key id"
+# AWS_SECRET_KEY = "Enter your AWS secret key"
