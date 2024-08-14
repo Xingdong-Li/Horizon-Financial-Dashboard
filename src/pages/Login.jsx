@@ -846,7 +846,7 @@ function Login() {
             ? PasswordResetSection()
             : BeforeLoginContent()}
         </div>
-        <div className="absolute bottom-2">
+        <div className="absolute bottom-2 flex flex-col items-center">
           <a href="/#">About Horizon</a>
           <br />© 2023-2024 Horizon, Inc. All rights reserved.
         </div>
