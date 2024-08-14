@@ -10,7 +10,7 @@ on:
 
 jobs:
   terraform:
-    name: Terraform Apply
+    name: Terraform Plan and Apply
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,8 @@ jobs:
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v1
         with:
-          terraform_version: 1.9.4
+          terraform_version: 1.5.0  # Use your Terraform version here
+
       - name: Terraform Init
         run: terraform init
 
@@ -35,7 +36,7 @@ jobs:
         run: terraform plan
 
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/main' # Only apply changes on push to main branch
+        if: github.ref == 'refs/heads/main'  # Only apply changes on push to main branch
         run: terraform apply -auto-approve
 
       - name: Terraform Destroy (Optional)
