@@ -88,8 +88,9 @@ Below is the infrastructure diagram for the Horizon project:
 2. In the terminal, from the root of the project, run: `cd terraform/` to switch to the Terraform folder.
 3. Create a new user in the AWS IAM console called `administrator`. Choose `Attach policies directly` and assign `AdministratorAccess` to this user. Create an access key for this user, which will include the secret access key.
 4. Open `/terraform/terraform.tfvars`, uncomment both `AWS_ACCESS_KEY_ID` and `AWS_SECRET_KEY`, and replace the values with the credentials you just created.
-5. In the terminal, from the `/terraform` directory, run: `terraform apply` and enter `yes` when asked, "Do you want to perform these actions?"
-6. Notice that the `.env` file under the project folder has been modified—2 new variables have been appended to the end of the file (`VITE_PLAID_LINK_TOKEN_URL` and `VITE_BANK_ACCOUNT_OPERATION_URL`).
+5. In the terminal, from the `/terraform` directory, run: `terraform init` to initialize terraform.
+6. In the terminal, from the `/terraform` directory, run: `terraform apply` and enter `yes` when asked, "Do you want to perform these actions?"
+7. Notice that the `.env` file under the project folder has been modified—2 new variables have been appended to the end of the file (`VITE_PLAID_LINK_TOKEN_URL` and `VITE_BANK_ACCOUNT_OPERATION_URL`).
 
 ### Run the Project
 
