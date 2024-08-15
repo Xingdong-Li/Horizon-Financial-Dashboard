@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import Branding from "../components/login/Branding";
-import { PopupButton } from "@typeform/embed-react";
-// import { useNavigate } from "react-router-dom";
 import {
   signIn,
   signUp,
