@@ -10,6 +10,11 @@ Horizon is a financial dashboard application designed to help users manage their
 - Transaction categorization and visualization
 - Responsive design.
 
+## Infrastructure Diagram
+Below is the infrastructure diagram for the Horizon project:
+
+![Infrastructure Diagram](./documents/infrastructure%20diagram.png)
+
 ## Project Setup
 
 ### Set Up the AWS Amplify-Access User
@@ -98,4 +103,4 @@ Both the infrastructure diagram and presentation slides are placed under `/docum
 
 ## License
 
-This project is open-source and licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is open-source and licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
